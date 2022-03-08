@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let graphics;
+        let canvas;
+
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            graphics = canvas.getContext("2d");
+
+            drawCircle();
+
+        }
+
+        function line() {
+            graphics.beginPath();
+            graphics.moveTo(x1, y1);
+            graphics.lineTo(x2, y2);
+            graphics.stroke();
+        }
+
+        function drawCircle() {
+            let i = 0;
+            let x = 240*Math.cos(i)+300;
+            let y = 240*Math.sin(i) +300;
+
+            console.log("Test");
+            
+            graphics.beginPath();
+            graphics.moveTo(x,y);
+
+            while (i < 2*Math.PI) {
+                i += 2*Math.PI/200;
+                x = 240*Math.cos(i)+300;
+                y = 240*Math.sin(i)+300;
+
+                graphics.lineTo(x,y);
+            }
+
+            graphics.stroke();
+            graphics.beginPath();
+
+            i=0;
+
+            while (i < 2*Math.PI) {
+                i += 2*Math.PI/60;
+                x = 
+            }
+        }
+    </script>
+
+</head>
+<body onload="init()">
+    <h1>My Heading</h1>
+
+    <p>This is a basic webpage</p>
+    <canvas id="myCanvas" width="600" height="600" style="border: 1px solid #d3d3d3"></canvas>
+</body>
+</html>
