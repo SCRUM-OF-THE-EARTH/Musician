@@ -14,3 +14,24 @@ This just simply means that you'll have to make sure that your enviroment is set
 ```bash
 git clone git@github.com:SCRUM-OF-THE-EARTH/Musician.git
 ```
+
+2. Make sure you have NOde installed on your machin. If you don't already have Node instaklled you can find it here: 
+[Nodejs](https://nodejs.org/en/download/)
+
+3. You will also need to install and configure the Java JDk so that react can compile an android app from the react native project. Java JDk can be foudn here: [JavaJDK](https://www.oracle.com/java/technologies/downloads/)
+
+3. You will also need to install Android studios in order to have access to an emulator and to build and generate APK or bundle files for Android. This is because the Android SDK is needed for this project Which can be found here: [Android Studios](https://developer.android.com/studio)
+
+4. Once these have been installed we need to set the enviromenta variables so that react knows where to get the build tools. This can be done in terminal.
+- To set the `JAVA_HOME` Variable:
+```bash
+ export JAVA_HOME=`Path to your java jdk`
+ ```
+- To set the `ANDROID_HOME` Variable with the directory of your sdk:
+```bash
+export ANDROID_HOME=`Pathg to your android sdk`
+```
+
+replacing the /usr/lib/android-sdk with the directory that has your version of the sdk
+
+
